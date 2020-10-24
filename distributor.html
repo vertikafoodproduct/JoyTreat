@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllProducts - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <a href="index.html"><img src="Cookies(1)/logo2.png" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts.html">Products</a></li>
+                        <li><a href="about%20us.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="distributor.html">Distributorship</a></li>
+                        
+                    </ul>
+                </nav>
+                <!--a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a-->
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    
+    
+ <!------------------account - page ------------------>
+
+    <div class="distributor-page">
+        <div class="container">
+            <div class="row">
+                
+                
+               
+                <div class="col-3">
+                    <div class="form-dist">
+                        <div class="form-btn">
+                        
+                        <span onclick="register()">Provide us your details</span>
+                            <hr id="Indicator">
+                        </div>
+    
+                        <form>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Company Name">
+                            <input type="text" placeholder="City">
+                            <input type="email" placeholder="Email">
+                            <input type="number" placeholder="Mobile Number">
+                            <textarea name="message" rows="10" cols="20" class="msg" placeholder="Type your message here"></textarea>
+                            
+                                                                                                       
+                           
+                            <a href="mailto:guptashantam98@gmail.com"><button type="submit" class="btn">Submit</button></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+<!------------------footer------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    
+                    
+                    
+                    <div class="app-logo">
+                        <img src="Cookies(1)/label-2.png" width="300" height="100">
+                    </div>
+                    <p >We do not compromise on the taste and quality of our products.</p>
+                    
+                </div>
+                <div class="footer-col-2">
+                  
+                    <h3><b>Follow us on</b></h3><br>
+                    <ul>
+                        
+                        <a href="https://www.facebook.com/joytreatvg"><li><img src="Cookies(1)/fbicon(1).png"></li></a>
+                        <li><img src="Cookies(1)/igicon(1).png"></li>
+                        
+                        
+                    </ul>
+                    
+                </div>
+                <div class="footer-col-3">
+                     <h3>For more details and further enquires</h3><br>
+                     <small>
+                         <b>Contact No. : +0120-2431742</b> 
+                         <br><b>Address: Ecotech- 1 Ext., Plot No. 171, Kasna, Greater Noida, U.P - 201310</b>
+                    </small>
+                    
+                </div>
+                 <div class="footer-col-4">
+                    <h3>Useful Links</h3><br>
+                     <br>
+                     <small> 
+                         <a href="https://goo.gl/maps/DTErpgZsLaY4bJNQ7"><p><h3>Click here to get locations on google maps<br><br></h3><p></a>
+                         <a href="https://drive.google.com/file/d/1Vs3Nvmn_-EBCgkXidOkEPZbIHgTa7c-i/view?usp=sharing"><p><h3>Download our catalogue</h3><p></a><br>
+                     </small>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Vertika Food Product Pvt. Ltd.</p>
+        </div>
+    </div>
+
+
+
+<!-------------js for toggle menu------------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>>
+    
+    
+<!-------------------js for toggle form------------------->
+    
+    <script>
+    
+    var LoginForm = document.getElementById("LoginForm")
+    var RegForm = document.getElementById("RegForm")
+    var Indicator = document.getElementById("Indicator")
+    
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+        
+    
+    </script>
+        
+</body>
+</html>
